@@ -8,7 +8,6 @@ public class Main
        final int wagePerHour=20;
        final int fullDayHour=8;
        final int halfDayHour=4;
-        int Wage= 0;
         int halfDayCount=0;
         int fullDayCount=0;
         int absent=0;
@@ -20,8 +19,7 @@ public class Main
 
         while (totalWorkingDays!=20&&totalWorkingHour<=100)
         {
-
-          totalWorkingDays++;
+            totalWorkingDays++;
             int a=rnd.nextInt(3);
             switch(a)
             {
@@ -38,7 +36,7 @@ public class Main
                     break;
             }
         }
-        System.out.println("Total wage for 20 days ----"+(Wage=((fullDayCount*fullDayHour)+(halfDayCount*halfDayHour))*wagePerHour)+"\n absent : "+absent+"\n halfDay : "+halfDayCount+"\n fullDay : "+fullDayCount);
+        System.out.println("Total wage for 20 days ----"+(((fullDayCount*fullDayHour)+(halfDayCount*halfDayHour))*wagePerHour)+"\n absent : "+absent+"\n halfDay : "+halfDayCount+"\n fullDay : "+fullDayCount);
         System.out.println("total hours in 20 days ----"+(totalWorkingHour));
 
     }
